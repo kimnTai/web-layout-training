@@ -1,8 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import DayDefault from "./pages/day/Day4";
+import DayDefault from "./pages/day/Day5";
 import Day1 from "./pages/day/Day1";
 import Day2 from "./pages/day/Day2";
 import Day3 from "./pages/day/Day3";
+import Day4 from "./pages/day/Day4";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path="/day1" element={<Day1 />} />
       <Route path="/day2" element={<Day2 />} />
       <Route path="/day3" element={<Day3 />} />
+      <Route path="/day4" element={<Day4 />} />
     </Routes>
   );
 }
