@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import DayDefault from "./pages/day/Day10";
+import DayDefault from "./pages/week/Week1";
 import Day1 from "./pages/day/Day1";
 import Day2 from "./pages/day/Day2";
 import Day3 from "./pages/day/Day3";
@@ -9,6 +9,7 @@ import Day6 from "./pages/day/Day6";
 import Day7 from "./pages/day/Day7";
 import Day9 from "./pages/day/Day9";
 import Day10 from "./pages/day/Day10";
+import Week1 from "./pages/week/Week1";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path="/day7" element={<Day7 />} />
       <Route path="/day9" element={<Day9 />} />
       <Route path="/day10" element={<Day10 />} />
+      <Route path="/week1" element={<Week1 />} />
     </Routes>
   );
 }
