@@ -94,9 +94,10 @@ export default function Week1() {
 
 const Style = styled.div`
   font-family: "Castoro", serif;
+  line-height: 1.5;
 
   .container {
-    width: 1296px;
+    max-width: 1296px;
     margin: 0 auto;
   }
 
@@ -116,19 +117,23 @@ const Style = styled.div`
     padding-right: 40px;
   }
 
+  img {
+    vertical-align: middle;
+  }
+
   header {
     padding-top: 160px;
 
     img {
       display: block;
       margin: 0 auto;
+      max-width: 100%;
     }
 
     h1,
     h2 {
       font-size: 128px;
       font-weight: 400;
-      line-height: 192px;
       letter-spacing: 0.12em;
     }
     h2 {
@@ -142,13 +147,12 @@ const Style = styled.div`
     padding-bottom: 48px;
 
     .box {
-      width: 636px;
+      max-width: 636px;
       margin-left: auto;
     }
 
     p {
       font-size: 32px;
-      line-height: 48px;
       font-weight: 400;
     }
   }
@@ -160,7 +164,6 @@ const Style = styled.div`
       color: #ae0000;
       font-size: 40px;
       font-weight: 400;
-      line-height: 60px;
       border-bottom: 3px solid #ae0000;
     }
 
@@ -168,18 +171,16 @@ const Style = styled.div`
       font-size: 20px;
       font-style: italic;
       font-weight: 400;
-      line-height: 30px;
       color: #949494;
     }
 
     p {
       font-size: 24px;
       font-weight: 400;
-      line-height: 36px;
     }
 
     li {
-      width: 636px;
+      max-width: 636px;
     }
   }
 
