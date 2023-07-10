@@ -1,7 +1,14 @@
 import router from "@/routes";
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    navigate("/course/flex");
+  }, []);
+
   return (
     <div
       style={{
