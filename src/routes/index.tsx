@@ -1,6 +1,7 @@
 import Home from "@/pages/Home";
 import Pixel from "@/pages/Pixel";
 import Flex from "@/pages/course/Flex";
+import SweetTaste from "@/pages/course/SweetTaste";
 import Day1 from "@/pages/day/Day1";
 import Day10 from "@/pages/day/Day10";
 import Day11 from "@/pages/day/Day11";
@@ -33,6 +34,7 @@ const router = createHashRouter([
   { path: "/week1", element: <Week1 /> },
   { path: "/pixel", element: <Pixel /> },
   { path: "/course/flex", element: <Flex /> },
+  { path: "/course/sweetTaste", element: <SweetTaste /> },
 ]);
 
 export default router;
