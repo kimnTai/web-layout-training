@@ -33,7 +33,7 @@ export default function SweetTaste() {
         <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png" />
       </div>
       <main className="container d-flex justify-content-between">
-        <menu>
+        <menu className="mr-20">
           <h2 className="fw-600">甜點類別</h2>
           <ul>
             <li className="active fw-600">所有甜點 (48)</li>
@@ -138,7 +138,57 @@ export default function SweetTaste() {
           </div>
         </div>
       </main>
-      <footer className="mt-60"></footer>
+      <div className="email-info mt-60">
+        <div className="container d-flex align-items-center justify-content-between">
+          <div className="d-flex align-items-center ml-80">
+            <img
+              className="h-40 mr-20"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logo-light.svg"
+              alt=""
+            />
+            <h2>訂閱你我的甜蜜郵件</h2>
+          </div>
+          <div className="d-flex align-items-center mr-80">
+            <input type="text" />
+            <button></button>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div className="container d-flex justify-content-between">
+          <div className="ml-80">
+            <img
+              className="mb-120"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logotype-sm-dark.svg"
+              alt=""
+            />
+            <div className="mb-30">
+              <p>07-1234-5678</p>
+              <p>sweetaste@email.com</p>
+              <p>800 高雄市新興區幸福路 520 號</p>
+            </div>
+            <div className="d-flex">
+              <img
+                className="h-32 mr-8"
+                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/ic-facebook.svg"
+                alt=""
+              />
+              <img
+                className="h-32"
+                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/ic-line%40.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="d-flex flex-column align-items-end justify-content-between mr-80">
+            <div className="d-flex">
+              <h2 className="fw-600 mt-10 mr-8">吃甜點的好日子。</h2>
+              <h2 className="fw-600">今天是個 ───</h2>
+            </div>
+            <p>© 2018 Sweetaste* All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
     </Style>
   );
 }
@@ -159,6 +209,9 @@ const Global = styled.div`
   .d-flex {
     display: flex;
   }
+  .flex-column {
+    flex-direction: column;
+  }
   .justify-content-between {
     justify-content: space-between;
   }
@@ -168,23 +221,47 @@ const Global = styled.div`
   .align-items-center {
     align-items: center;
   }
+  .align-items-end {
+    align-items: end;
+  }
   .flex-wrap {
     flex-wrap: wrap;
   }
   .h-40 {
     height: 40px;
   }
+  .h-32 {
+    height: 32px;
+  }
   .mb-20 {
     margin-bottom: 20px;
   }
+  .mb-30 {
+    margin-bottom: 30px;
+  }
   .mb-60 {
     margin-bottom: 60px;
+  }
+  .mb-120 {
+    margin-bottom: 120px;
   }
   .mt-10 {
     margin-top: 10px;
   }
   .mt-60 {
     margin-top: 60px;
+  }
+  .mr-20 {
+    margin-right: 20px;
+  }
+  .ml-80 {
+    margin-left: 80px;
+  }
+  .mr-8 {
+    margin-right: 8px;
+  }
+  .mr-80 {
+    margin-right: 80px;
   }
   .fw-600 {
     font-weight: 600;
@@ -209,8 +286,6 @@ const Style = styled(Global)`
   }
   main {
     menu {
-      margin-right: 20px;
-
       h2 {
         padding: 16px;
         text-align: center;
@@ -232,10 +307,6 @@ const Style = styled(Global)`
         background: #eaf0ed;
       }
     }
-  }
-  footer {
-    padding: 30px;
-    background: #3f5d45;
   }
 
   .card {
@@ -260,7 +331,7 @@ const Style = styled(Global)`
       color: #eaf0ed;
       background: #3f5d45;
       padding: 10px;
-      letter-spacing: 0.2em;
+      line-height: 1.2;
     }
     button {
       position: absolute;
@@ -306,6 +377,56 @@ const Style = styled(Global)`
     .active {
       background: #3f5d45;
       color: #eaf0ed;
+    }
+  }
+
+  footer {
+    padding: 30px;
+    background: #eaf0ed;
+
+    img {
+      height: 27px;
+    }
+
+    p {
+      line-height: 1.5;
+      color: #3f5d45;
+    }
+
+    h2 {
+      color: #3f5d45;
+      font-size: 24px;
+      writing-mode: vertical-lr;
+    }
+  }
+
+  .email-info {
+    padding: 30px;
+    background: #3f5d45;
+
+    h2 {
+      font-size: 24px;
+      color: #eaf0ed;
+    }
+    input {
+      height: 56px;
+      width: 316px;
+      border: none;
+      box-sizing: border-box;
+      background: #eaf0ed;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-position: 20px;
+      background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/mail-24px.png");
+    }
+    button {
+      border: none;
+      box-sizing: border-box;
+      background: #ffe180;
+      padding: 28px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/arrow_forward-24px.png");
     }
   }
 `;
