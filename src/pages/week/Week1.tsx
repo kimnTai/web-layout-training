@@ -17,17 +17,17 @@ export default function Week1() {
 
   return (
     <Style>
-      <header>
+      <header className="mt-160">
         <div className="container">
-          <h1>VITO</h1>
+          <h1 className="fs-128">VITO</h1>
           <img src={vito} />
-          <h2>RESUME</h2>
+          <h2 className="fs-128">RESUME</h2>
         </div>
       </header>
-      <div className="introduce">
+      <div className="introduce pt-48 pb-48">
         <div className="container">
           <div className="box">
-            <p>
+            <p className="fs-32">
               I'm Vito, a UI Designer with 5+ years of experience. I create
               visually appealing interfaces for web and mobile apps. Proficient
               in Sketch, Adobe XD, Figma, HTML, CSS, and JavaScript. I enjoy
@@ -47,26 +47,26 @@ export default function Week1() {
           </li>
           <li className="mb-40">
             <h3 className="mb-16">Education</h3>
-            <h5>2014-2018</h5>
+            <h4>2014-2018</h4>
             <p className="mb-16">
               Bachelor of Science in Business Administration, University of
               California, Los Angeles
             </p>
-            <h5>2012-2014</h5>
+            <h4>2012-2014</h4>
             <p className="mb-16">
               Associate of Arts in Graphic Design, San Francisco State
               University
             </p>
-            <h5>2008-2012</h5>
+            <h4>2008-2012</h4>
             <p className="mb-16">High School Diploma, Lincoln High School</p>
           </li>
           <li className="mb-40">
             <h3 className="mb-16">Work</h3>
-            <h5>2018-2021</h5>
+            <h4>2018-2021</h4>
             <p className="mb-16">Marketing Manager, ABC Company</p>
-            <h5>2016-2018</h5>
+            <h4>2016-2018</h4>
             <p className="mb-16">Sales Associate, XYZ Corporation</p>
-            <h5>2014-2016</h5>
+            <h4>2014-2016</h4>
             <p className="mb-16">Customer Service Representative, QRS Inc.</p>
           </li>
           <li className="mb-40">
@@ -110,50 +110,58 @@ const Style = styled.div`
   .mb-40 {
     margin-bottom: 40px;
   }
+  .mt-160 {
+    margin-top: 160px;
+  }
+
   .pl-40 {
     padding-left: 40px;
   }
   .pr-40 {
     padding-right: 40px;
   }
+  .pt-48 {
+    padding-top: 48px;
+  }
+  .pb-48 {
+    padding-bottom: 48px;
+  }
+
+  .fs-24 {
+    font-size: 24px;
+  }
+  .fs-32 {
+    font-size: 32px;
+  }
+  .fs-128 {
+    font-size: 128px;
+  }
 
   img {
-    vertical-align: middle;
+    display: block;
   }
 
   header {
-    padding-top: 160px;
-
     img {
-      display: block;
       margin: 0 auto;
       max-width: 100%;
     }
 
-    h1,
-    h2 {
-      font-size: 128px;
-      font-weight: 400;
+    h1 {
       letter-spacing: 0.12em;
     }
     h2 {
+      letter-spacing: 0.12em;
       text-align: right;
     }
   }
 
   .introduce {
     background: #efefef;
-    padding-top: 48px;
-    padding-bottom: 48px;
 
     .box {
       max-width: 636px;
       margin-left: auto;
-    }
-
-    p {
-      font-size: 32px;
-      font-weight: 400;
     }
   }
 
@@ -163,20 +171,18 @@ const Style = styled.div`
     h3 {
       color: #ae0000;
       font-size: 40px;
-      font-weight: 400;
       border-bottom: 3px solid #ae0000;
     }
 
-    h5 {
+    h4 {
       font-size: 20px;
       font-style: italic;
-      font-weight: 400;
+
       color: #949494;
     }
 
     p {
       font-size: 24px;
-      font-weight: 400;
     }
 
     li {
@@ -186,7 +192,10 @@ const Style = styled.div`
 
   footer {
     background: #000000;
-    text-align: center;
     padding: 64px 0 64px 0px;
+    text-align: center;
+    img {
+      display: inline;
+    }
   }
 `;
