@@ -1,18 +1,18 @@
 import { effect } from "@/packages/reactive/effect";
-import { reactive } from "@/packages/reactive/reactive";
+import ref from "@/packages/reactive/ref";
 import { useCallback, useState } from "react";
 
-export const useReactive = (obj: any) => {
+export const useRef = (value: any) => {
   const [pre, preState] = useState({} as any);
-  const [state] = useState(reactive(obj));
+  const [state] = useState(ref(value));
 
   const [, updateState] = useState({});
   const forceUpdate = useCallback(() => updateState({}), []);
 
   effect(() => {
-    if (pre?.text !== state.text) {
+    if (pre?.text !== state.value) {
       preState((a) => {
-        a.text = state.text;
+        a.text = state.value;
         return a;
       });
       forceUpdate();

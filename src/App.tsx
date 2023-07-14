@@ -1,12 +1,12 @@
 import { useModel } from "./hook/useModel";
-import { useReactive } from "./hook/useReactive";
+import { useRef } from "./hook/useRef";
 
 export default function App() {
-  const state = useReactive({ text: "" });
+  const state = useRef("");
 
   return (
     <div className="App">
-      value : {state.text}
+      value : {state.value}
       <br />
       <input type="text" ref={useModel(state)} />
     </div>
