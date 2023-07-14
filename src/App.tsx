@@ -1,12 +1,14 @@
-import { RouterProvider } from "react-router-dom";
-import router from "./routes";
+import { useModel } from "./hook/useModel";
+import { useReactive } from "./hook/useReactive";
 
-function App() {
+export default function App() {
+  const state = useReactive({ text: "" });
+
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      value : {state.text}
+      <br />
+      <input type="text" ref={useModel(state)} />
     </div>
   );
 }
-
-export default App;
