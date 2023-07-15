@@ -4,7 +4,7 @@ import styled from "styled-components";
  * @description Day 11 - 文字設定（font-size、line-height）
  * @export
  */
-export default function Day10() {
+export default function Day11() {
   return (
     <Style>
       <div className="container">

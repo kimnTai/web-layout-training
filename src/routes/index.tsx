@@ -5,6 +5,7 @@ import SweetTaste from "@/pages/course/SweetTaste";
 import Day1 from "@/pages/day/Day1";
 import Day10 from "@/pages/day/Day10";
 import Day11 from "@/pages/day/Day11";
+import Day14 from "@/pages/day/Day14";
 import Day2 from "@/pages/day/Day2";
 import Day3 from "@/pages/day/Day3";
 import Day4 from "@/pages/day/Day4";
@@ -31,6 +32,7 @@ const router = createHashRouter([
   { path: "/day9", element: <Day9 /> },
   { path: "/day10", element: <Day10 /> },
   { path: "/day11", element: <Day11 /> },
+  { path: "/day14", element: <Day14 /> },
   { path: "/week1", element: <Week1 /> },
   { path: "/pixel", element: <Pixel /> },
   { path: "/course/flex", element: <Flex /> },
