@@ -1,3 +1,6 @@
+import discord from "@/assets/discord.jpg";
+import instagram from "@/assets/instagram.jpg";
+import message from "@/assets/message.jpg";
 import styled from "styled-components";
 
 /**
@@ -116,9 +119,21 @@ export default function Week2() {
             <img className="px-16" src={trending} alt="" />
           </div>
           <div className="d-flex">
-            <img className="hover-opacity" src={discord} alt="" />
-            <img className="hover-opacity" src={instagram} alt="" />
-            <img className="hover-opacity" src={message} alt="" />
+            <img
+              className="mx-w-162 aspect-square object-cover rounded-40 hover-shadow-purple mr-20 "
+              src={discord}
+              alt=""
+            />
+            <img
+              className="mx-w-162 aspect-square object-cover rounded-40 hover-shadow-purple mr-20"
+              src={instagram}
+              alt=""
+            />
+            <img
+              className="mx-w-162 aspect-square object-cover rounded-40 hover-shadow-purple hover-aa"
+              src={message}
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -166,6 +181,7 @@ const Style = styled.div`
   img {
     display: block;
     max-width: 100%;
+    height: auto;
   }
 
   .container {
@@ -255,6 +271,9 @@ const Style = styled.div`
   .mb-36 {
     margin-bottom: 36px;
   }
+  .mr-20 {
+    margin-right: 20px;
+  }
   .mr-24 {
     margin-right: 24px;
   }
@@ -262,6 +281,9 @@ const Style = styled.div`
     margin-left: 550px;
   }
 
+  .mx-w-162 {
+    max-width: 162px;
+  }
   .mx-w-306 {
     max-width: 306px;
   }
@@ -282,14 +304,24 @@ const Style = styled.div`
     text-align: center;
   }
 
-  .hover-opacity {
-    &:hover {
-      opacity: 0.8;
-    }
+  .rounded-40 {
+    border-radius: 2.5rem;
   }
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+
   .hover-color-green {
     &:hover {
       color: var(--green);
+    }
+  }
+  .hover-shadow-purple {
+    &:hover {
+      box-shadow: 0px 0px 16px 3px #9094ffe5, 0px 4px 4px 0px #00000040;
     }
   }
 
@@ -317,9 +349,6 @@ const [
   photographer,
   people_2,
   trending,
-  discord,
-  instagram,
-  message,
   rectangle10,
   rectangle14,
   rectangle15,
@@ -332,9 +361,6 @@ const [
   "photographer.png",
   "people-2.png",
   "trending_flat_black_24dp 1.png",
-  "discord.png",
-  "instagram.png",
-  "message.png",
   "Rectangle 10.png",
   "Rectangle 14.png",
   "Rectangle 15.png",
