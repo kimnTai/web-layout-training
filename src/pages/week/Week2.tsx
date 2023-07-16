@@ -10,22 +10,22 @@ export default function Week2() {
       <header className="bg-black pt-40">
         <ul className="container d-flex justify-content-between">
           <li className="mx-w-306">
-            <a className="color-white" href="">
+            <a className="color-white hover-opacity" href="">
               WILLIAM LEE
             </a>
           </li>
           <li className="mx-w-306">
-            <a className="color-white" href="">
+            <a className="color-white hover-opacity" href="">
               BASED IN TAIWAN
             </a>
           </li>
           <li className="mx-w-306">
-            <a className="color-white" href="">
+            <a className="color-white hover-opacity" href="">
               CURRENTLY FRONT END ENGINEER AT HEXSCHOOL
             </a>
           </li>
           <li className="mx-w-306">
-            <a className="color-white" href="">
+            <a className="color-white hover-opacity" href="">
               CONTACT ME
             </a>
           </li>
@@ -44,7 +44,7 @@ export default function Week2() {
             <p className="color-white fs-64">developer</p>
             <h1 className="color-green fs-128 text-right">William</h1>
             <div className="text-right">
-              <a className="btn bg-white">
+              <a className="btn bg-white" href="">
                 contact me<i className="arrow-outward"></i>
               </a>
             </div>
@@ -93,23 +93,23 @@ export default function Week2() {
       </div>
 
       <div className="container d-flex justify-content-between align-items-center py-160">
-        <ul className="d-flex flex-wrap mx-w-636">
-          <li className="mx-w-306 mb-24">
+        <ul className="d-flex flex-wrap">
+          <li className="mx-w-306 mb-24 mr-24 board-about">
             <h3 className="fs-20">01</h3>
             <h3 className="fs-20">Attention to Detail</h3>
             <p>Meticulous code analysis and optimization.</p>
           </li>
-          <li className="mx-w-306 mb-24">
+          <li className="mx-w-306 mb-24 mr-24 board-about">
             <h3 className="fs-20">02</h3>
             <h3 className="fs-20">Adaptability</h3>
             <p>Swift learning of new technologies.</p>
           </li>
-          <li className="mx-w-306 mb-24">
+          <li className="mx-w-306 mb-24 mr-24 board-about">
             <h3 className="fs-20">03</h3>
             <h3 className="fs-20">Problem Solver</h3>
             <p>Identifying and resolving issues.</p>
           </li>
-          <li className="mx-w-306 mb-24">
+          <li className="mx-w-306 mb-24 mr-24 board-about">
             <h3 className="fs-20">04</h3>
             <h3 className="fs-20">Team Player</h3>
             <p>Collaborates and shares ideas.</p>
@@ -138,14 +138,17 @@ export default function Week2() {
           </div>
           <div className="d-flex">
             <img
+              className="hover-opacity"
               src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/discord.png"
               alt=""
             />
             <img
+              className="hover-opacity"
               src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/instagram.png"
               alt=""
             />
             <img
+              className="hover-opacity"
               src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/message.png"
               alt=""
             />
@@ -154,7 +157,7 @@ export default function Week2() {
       </div>
 
       <div className="container py-160">
-        <h2 className="fs-64">My Projects</h2>
+        <h2 className="fs-64 ml-550">My Projects</h2>
         <div className="d-flex justify-content-between">
           <img
             src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/Rectangle%2010.png"
@@ -209,6 +212,7 @@ const Style = styled.div`
   }
   img {
     display: block;
+    max-width: 100%;
   }
 
   .container {
@@ -301,6 +305,9 @@ const Style = styled.div`
   .mr-24 {
     margin-right: 24px;
   }
+  .ml-550 {
+    margin-left: 550px;
+  }
 
   .mx-w-306 {
     max-width: 306px;
@@ -322,13 +329,29 @@ const Style = styled.div`
     text-align: center;
   }
 
+  .hover-opacity {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
   .btn {
     padding: 12px 24px 12px 24px;
     border-radius: 32px;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   .bg-img-introduction {
     background-repeat: no-repeat;
     background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/background-img.png");
+  }
+
+  .board-about {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e3e3e3;
+    box-shadow: 4px 4px 4px 0px #00000014;
   }
 `;
