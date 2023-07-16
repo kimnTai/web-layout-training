@@ -10,22 +10,22 @@ export default function Week2() {
       <header className="bg-black pt-40">
         <ul className="container d-flex justify-content-between">
           <li className="mx-w-306">
-            <a className="color-white hover-opacity" href="">
+            <a className="color-white hover-color-green" href="">
               WILLIAM LEE
             </a>
           </li>
           <li className="mx-w-306">
-            <a className="color-white hover-opacity" href="">
+            <a className="color-white hover-color-green" href="">
               BASED IN TAIWAN
             </a>
           </li>
           <li className="mx-w-306">
-            <a className="color-white hover-opacity" href="">
+            <a className="color-white hover-color-green" href="">
               CURRENTLY FRONT END ENGINEER AT HEXSCHOOL
             </a>
           </li>
           <li className="mx-w-306">
-            <a className="color-white hover-opacity" href="">
+            <a className="color-white hover-color-green" href="">
               CONTACT ME
             </a>
           </li>
@@ -285,6 +285,11 @@ const Style = styled.div`
   .hover-opacity {
     &:hover {
       opacity: 0.8;
+    }
+  }
+  .hover-color-green {
+    &:hover {
+      color: var(--green);
     }
   }
 
