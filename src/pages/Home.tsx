@@ -6,7 +6,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    navigate("/course/sweetTaste");
+    navigate("/week2");
   }, []);
 
   return (

@@ -34,14 +34,10 @@ export default function Week2() {
 
       <div className="bg-black ">
         <div className="container d-flex justify-content-between align-items-center py-72">
-          <img
-            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/people.png"
-            alt=""
-          />
+          <img src={people} alt="" />
           <div>
             <p className="color-white fs-64">Hi</p>
-            <p className="color-white fs-64">I’m a front-end</p>
-            <p className="color-white fs-64">developer</p>
+            <p className="color-white fs-64">I’m a front-end developer</p>
             <h1 className="color-green fs-128 text-right">William</h1>
             <div className="text-right">
               <a className="btn bg-white" href="">
@@ -52,7 +48,13 @@ export default function Week2() {
         </div>
       </div>
 
-      <div className="bg-img-introduction py-160">
+      <div
+        className="py-160"
+        style={{
+          backgroundRepeat: "no-repeat",
+          backgroundImage: `url(${background_img})`,
+        }}
+      >
         <div className="container d-flex justify-content-between">
           <div className="mx-w-526">
             <h2 className="color-white fs-64 mb-36">Introduction</h2>
@@ -62,33 +64,14 @@ export default function Week2() {
               user experience.
             </p>
             <div className="d-flex">
-              <img
-                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/sparkle-sm.png"
-                alt=""
-              />
-              <img
-                className="px-16"
-                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/sparkle-sm.png"
-                alt=""
-              />
-              <img
-                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/sparkle-sm.png"
-                alt=""
-              />
+              <img src={sparkle_sm} alt="" />
+              <img className="px-16" src={sparkle_sm} alt="" />
+              <img src={sparkle_sm} alt="" />
             </div>
           </div>
-          <img
-            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/sparkle.png"
-            alt=""
-          />
-          <img
-            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/photographer.png"
-            alt=""
-          />
-          <img
-            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/people-2.png"
-            alt=""
-          />
+          <img src={sparkle} alt="" />
+          <img src={photographer} alt="" />
+          <img src={people_2} alt="" />
         </div>
       </div>
 
@@ -130,28 +113,12 @@ export default function Week2() {
         <div className="container d-flex justify-content-between align-items-center">
           <div className="d-flex">
             <h2 className="color-white fs-64">CONTACT ME</h2>
-            <img
-              className="px-16"
-              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/trending_flat_black_24dp%201.png"
-              alt=""
-            />
+            <img className="px-16" src={trending} alt="" />
           </div>
           <div className="d-flex">
-            <img
-              className="hover-opacity"
-              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/discord.png"
-              alt=""
-            />
-            <img
-              className="hover-opacity"
-              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/instagram.png"
-              alt=""
-            />
-            <img
-              className="hover-opacity"
-              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/message.png"
-              alt=""
-            />
+            <img className="hover-opacity" src={discord} alt="" />
+            <img className="hover-opacity" src={instagram} alt="" />
+            <img className="hover-opacity" src={message} alt="" />
           </div>
         </div>
       </div>
@@ -159,17 +126,10 @@ export default function Week2() {
       <div className="container py-160">
         <h2 className="fs-64 ml-550">My Projects</h2>
         <div className="d-flex justify-content-between">
-          <img
-            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/Rectangle%2010.png"
-            alt=""
-          />
+          <img src={rectangle10} alt="" />
           <div className="d-flex justify-content-between flex-column ">
             <div className="d-flex">
-              <img
-                className="mr-24"
-                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/Rectangle%2015.png"
-                alt=""
-              />
+              <img className="mr-24" src={rectangle15} alt="" />
               <div className="d-flex justify-content-between flex-column items-start mx-w-636">
                 <p>
                   I've worked on a variety of websites, including e-commerce
@@ -181,16 +141,9 @@ export default function Week2() {
                 </a>
               </div>
             </div>
-
             <div className="d-flex justify-content-between">
-              <img
-                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/Rectangle%2014.png"
-                alt=""
-              />
-              <img
-                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/Rectangle%2029.png"
-                alt=""
-              />
+              <img src={rectangle14} alt="" />
+              <img src={rectangle29} alt="" />
             </div>
           </div>
         </div>
@@ -343,11 +296,6 @@ const Style = styled.div`
     }
   }
 
-  .bg-img-introduction {
-    background-repeat: no-repeat;
-    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/background-img.png");
-  }
-
   .board-about {
     border-width: 1px;
     border-style: solid;
@@ -355,3 +303,39 @@ const Style = styled.div`
     box-shadow: 4px 4px 4px 0px #00000014;
   }
 `;
+
+const [
+  people,
+  background_img,
+  sparkle_sm,
+  sparkle,
+  photographer,
+  people_2,
+  trending,
+  discord,
+  instagram,
+  message,
+  rectangle10,
+  rectangle14,
+  rectangle15,
+  rectangle29,
+] = [
+  "people.png",
+  "background-img.png",
+  "sparkle-sm.png",
+  "sparkle.png",
+  "photographer.png",
+  "people-2.png",
+  "trending_flat_black_24dp 1.png",
+  "discord.png",
+  "instagram.png",
+  "message.png",
+  "Rectangle 10.png",
+  "Rectangle 14.png",
+  "Rectangle 15.png",
+  "Rectangle 29.png",
+].map((key) => {
+  const url =
+    "https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2";
+  return `${url}/${key}`;
+});
