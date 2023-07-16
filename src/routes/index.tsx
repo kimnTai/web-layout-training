@@ -15,6 +15,7 @@ import Day6 from "@/pages/day/Day6";
 import Day7 from "@/pages/day/Day7";
 import Day9 from "@/pages/day/Day9";
 import Week1 from "@/pages/week/Week1";
+import Week2 from "@/pages/week/Week2";
 import { createHashRouter } from "react-router-dom";
 
 const router = createHashRouter([
@@ -36,6 +37,7 @@ const router = createHashRouter([
   { path: "/day14", element: <Day14 /> },
   { path: "/day15", element: <Day15 /> },
   { path: "/week1", element: <Week1 /> },
+  { path: "/week2", element: <Week2 /> },
   { path: "/pixel", element: <Pixel /> },
   { path: "/course/flex", element: <Flex /> },
   { path: "/course/sweetTaste", element: <SweetTaste /> },
