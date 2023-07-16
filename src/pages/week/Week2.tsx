@@ -120,17 +120,17 @@ export default function Week2() {
           </div>
           <div className="d-flex">
             <img
-              className="mx-w-162 aspect-square object-cover rounded-40 hover-shadow-purple mr-20 "
+              className="mx-w-162 aspect-square object-cover rounded-40 hover-shadow-purple cursor-pointer mr-20"
               src={discord}
               alt=""
             />
             <img
-              className="mx-w-162 aspect-square object-cover rounded-40 hover-shadow-purple mr-20"
+              className="mx-w-162 aspect-square object-cover rounded-40 hover-shadow-purple cursor-pointer mr-20"
               src={instagram}
               alt=""
             />
             <img
-              className="mx-w-162 aspect-square object-cover rounded-40 hover-shadow-purple hover-aa"
+              className="mx-w-162 aspect-square object-cover rounded-40 hover-shadow-purple cursor-pointer"
               src={message}
               alt=""
             />
@@ -312,6 +312,9 @@ const Style = styled.div`
   }
   .object-cover {
     object-fit: cover;
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
 
   .hover-color-green {
