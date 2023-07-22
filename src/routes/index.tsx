@@ -7,6 +7,7 @@ import Day10 from "@/pages/day/Day10";
 import Day11 from "@/pages/day/Day11";
 import Day14 from "@/pages/day/Day14";
 import Day15 from "@/pages/day/Day15";
+import Day16 from "@/pages/day/Day16";
 import Day2 from "@/pages/day/Day2";
 import Day3 from "@/pages/day/Day3";
 import Day4 from "@/pages/day/Day4";
@@ -36,6 +37,7 @@ const router = createHashRouter([
   { path: "/day11", element: <Day11 /> },
   { path: "/day14", element: <Day14 /> },
   { path: "/day15", element: <Day15 /> },
+  { path: "/day16", element: <Day16 /> },
   { path: "/week1", element: <Week1 /> },
   { path: "/week2", element: <Week2 /> },
   { path: "/pixel", element: <Pixel /> },
