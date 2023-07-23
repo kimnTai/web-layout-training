@@ -4,7 +4,7 @@ import styled from "styled-components";
  * @description Day 17 - background-image
  * @export
  */
-export default function Day16() {
+export default function Day17() {
   return (
     <Style>
       <div className="image"></div>
